@@ -106,7 +106,7 @@ if($customDomainHostNames)
         New-AzureRmCdnCustomDomain -HostName $customDomainHostName `
                                    -CustomDomainName $customDomainName `
                                    -EndpointName $newEndpointName `
-                                   -ProfileName $newEndpoint `
+                                   -ProfileName $newProfileName `
                                    -ResourceGroupName $resourceGroupName
         $counter++
     }
